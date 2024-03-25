@@ -1,0 +1,37 @@
+.special_btn_container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.special_btn {
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  padding: 10px 50px;
+  font-size: 1rem;
+}
+
+.special_btn_container::after {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color);
+  bottom: -20px;
+  right: -35px;
+  border-left: 1px solid white;
+  width: 50px;
+  height: 25px;
+  transform: rotate(42.42deg);
+}
+
+.special_btn_container::before {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color);
+  top: -20px;
+  left: -35px;
+  border-right: 1px solid white;
+  width: 50px;
+  height: 25px;
+  transform: rotate(42.42deg);
+}
