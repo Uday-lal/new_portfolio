@@ -1,0 +1,7 @@
+.skill_card {
+  width: 100%;
+  background-color: #26225a80;
+  backdrop-filter: blur(32px);
+  padding: 10px;
+  border-radius: 20px;
+}

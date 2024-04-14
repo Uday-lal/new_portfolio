@@ -3,6 +3,7 @@ import styles from "@/styles/home.module.css";
 import SpecialButton from "./components/Button";
 import SectionTitle from "./components/SectionTitle";
 import Header from "./components/Header";
+import SkillCard from "./components/SkillCard";
 import Grid from "@mui/material/Grid";
 
 export default function Home() {
@@ -39,6 +40,31 @@ export default function Home() {
               </Grid>
               <Grid className={styles.about_image_container} item xs={4}>
                 <img src="/images/my_boy.jpg" alt="my_boy_image" />
+              </Grid>
+            </Grid>
+          </div>
+        </section>
+        <section className={styles.project_section}>
+          <div className={styles.container}>
+            <SectionTitle>My Skills</SectionTitle>
+            <Grid
+              container
+              style={{
+                marginTop: "20px",
+              }}
+              spacing={5}
+            >
+              <Grid item xs={4}>
+                <SkillCard />
+              </Grid>
+              <Grid item xs={4}>
+                <SkillCard />
+              </Grid>
+              <Grid item xs={4}>
+                <SkillCard />
+              </Grid>
+              <Grid item xs={4}>
+                <SkillCard />
               </Grid>
             </Grid>
           </div>
