@@ -1,0 +1,13 @@
+.section_title {
+  color: white;
+  font-size: 3rem;
+}
+
+.section_title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #e0583e;
+  width: 25%;
+  margin-top: 15px;
+}

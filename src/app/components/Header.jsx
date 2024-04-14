@@ -1,10 +1,27 @@
+"use client";
 import styles from "@/styles/Header.module.css";
 import SpecialButton from "./Button";
+import { useEffect, useState } from "react";
 
 function Header(props) {
+  const [isScrolling, setIsScrolling] = useState(false);
+  const handleScroll = (e) => {
+    const { pageYOffset, scrollY } = window;
+    if (scrollY > 100) {
+      setIsScrolling(true);
+    } else {
+      setIsScrolling(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
-      <header className={styles.header}>
+      <header
+        className={!isScrolling ? styles.header : styles.header_scrolling}
+      >
         <div className={styles.header_container}>
           <div className={styles.header_left_section}>
             <h3>Hey, I'm Uday</h3>
@@ -21,10 +38,11 @@ function Header(props) {
                 <a href="#">Experience</a>
               </li>
               <li>
-                <a href="#">Skills</a>
+                <a href="#">Projects</a>
               </li>
               <li className={styles.resume_btn_container}>
                 <SpecialButton
+                  className={isScrolling ? styles.resume_btn : ""}
                   style={{
                     margin: "0px",
                   }}
