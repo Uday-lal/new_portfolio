@@ -1,4 +1,5 @@
 import { K2D } from "next/font/google";
+import "../styles/fonts.css";
 import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin"] });
