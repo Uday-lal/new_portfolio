@@ -1,4 +1,5 @@
 import { K2D } from "next/font/google";
+import Header from "./components/Header";
 import "../styles/fonts.css";
 import "./globals.css";
 
@@ -13,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={k2d.className}>{children}</body>
+      <body className={k2d.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
