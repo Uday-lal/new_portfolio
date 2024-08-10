@@ -12,11 +12,17 @@ function Header(props) {
             Uday Lal
           </h1>
         </div>
-        <div className="links_section flex justify-around w-1/2">
+        <div className="links_section flex justify-around items-center w-1/2">
           <a href="#">About ME</a>
           <a href="#">Journey</a>
           <a href="#">Projects</a>
           <a href="#">Contact Me</a>
+          <a
+            href="#"
+            className="px-[20px] rounded-full py-[5px] bg-black text-white"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </header>
