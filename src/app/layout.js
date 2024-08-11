@@ -15,8 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={k2d.className}>
-        <Header />
-        {children}
+        <div className="relative overflow-hidden">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );

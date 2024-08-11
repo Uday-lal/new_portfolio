@@ -1,16 +1,16 @@
 function Header(props) {
   return (
     <header className="w-full py-5">
-      <div className="p-4 md:px-[100px] lg:px-[200px] flex items-center justify-between">
+      <div className="p-4 md:px-[100px] 3xl:px-[200px] flex items-center justify-between">
         <div className="brand_section">
-          <h1
+          <span
             className="font-bold text-3xl"
             style={{
               fontFamily: "NicoMojo",
             }}
           >
             Uday Lal
-          </h1>
+          </span>
         </div>
         <div className="links_section flex justify-around items-center w-1/2">
           <a href="#">About ME</a>
