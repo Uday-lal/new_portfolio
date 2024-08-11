@@ -1,3 +1,5 @@
+import Editor from "./components/Editor";
+
 export default function Home() {
   return (
     <main className="w-full">
@@ -14,7 +16,7 @@ export default function Home() {
         </div>
         <div className="section_right">
           <div className="w-full editor_container">
-            <div className="editor relative w-full z-50 h-[300px] 3xl:h-[350px] bg-[#2D303E]"></div>
+            <Editor />
           </div>
         </div>
       </section>
